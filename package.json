@@ -1,0 +1,24 @@
+{
+  "name": "valorantdiscordbot",
+  "version": "1.0.0",
+  "description": "A discord bot for valorant",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmedamer2/ValorantDiscordBot.git"
+  },
+  "author": "Ahmed Amer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahmedamer2/ValorantDiscordBot/issues"
+  },
+  "homepage": "https://github.com/ahmedamer2/ValorantDiscordBot#readme",
+  "dependencies": {
+    "unofficial-valorant-api": "^2.2.1-stable.2"
+  }
+}
