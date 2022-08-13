@@ -12,7 +12,7 @@ module.exports = {
 				await command.execute(interaction, client);
 			} catch (err) {
 				console.error(err);
-				await interaction.reply({
+				await interaction.editReply({
 					content: `Something went wrong while executing this command...`,
 					ephemeral: true
 				});
