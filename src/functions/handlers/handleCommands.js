@@ -13,9 +13,16 @@ module.exports = (client) => {
 			const { commands, commandArray } = client;
 			for (const file of commandFiles) {
 				const command = require(`../../commands/${folder}/${file}`);
-				commands.set(command.data.name, command);
-				commandArray.push(command.data.toJSON());
-				console.log(`Command: ${command.data.name} has passed through the handler`);
+				if (folder === "andrewCommands") {
+					const commandName = file.split(".")[0];
+					commands.set(commandName, command);
+				} else {
+					commands.set(command.data.name, command);
+					commandArray.push(command.data.toJSON());
+					console.log(
+						`Command: ${command.data.name} has passed through the handler`
+					);
+				}
 			}
 		}
 

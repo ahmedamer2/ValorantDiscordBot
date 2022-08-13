@@ -5,7 +5,11 @@ const { Client, Collection, GatewayIntentBits } = require("discord.js");
 const fs = require("fs");
 
 const client = new Client({
-	intents: [GatewayIntentBits.Guilds]
+	intents: [
+		GatewayIntentBits.Guilds,
+		GatewayIntentBits.MessageContent,
+		GatewayIntentBits.GuildMessages
+	]
 });
 client.commands = new Collection();
 client.commandArray = [];
