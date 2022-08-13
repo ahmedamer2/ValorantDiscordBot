@@ -1,24 +1,30 @@
 {
-  "name": "valorantdiscordbot",
-  "version": "1.0.0",
-  "description": "A discord bot for valorant",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "start": "node .",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ahmedamer2/ValorantDiscordBot.git"
-  },
-  "author": "Ahmed Amer",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ahmedamer2/ValorantDiscordBot/issues"
-  },
-  "homepage": "https://github.com/ahmedamer2/ValorantDiscordBot#readme",
-  "dependencies": {
-    "unofficial-valorant-api": "^2.2.1-stable.2"
-  }
+	"name": "valorantdiscordbot",
+	"version": "1.0.0",
+	"description": "A discord bot for valorant",
+	"main": "src/index.js",
+	"scripts": {
+		"start": "node ./src/bot.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ahmedamer2/ValorantDiscordBot.git"
+	},
+	"author": "Ahmed Amer",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/ahmedamer2/ValorantDiscordBot/issues"
+	},
+	"homepage": "https://github.com/ahmedamer2/ValorantDiscordBot#readme",
+	"dependencies": {
+		"discord.js": "^14.2.0",
+		"dotenv": "^16.0.1",
+		"unofficial-valorant-api": "^2.2.1-stable.2"
+	},
+	"devDependencies": {
+		"eslint": "^8.21.0",
+		"eslint-config-prettier": "^8.5.0",
+		"prettier": "^2.7.1"
+	}
 }
